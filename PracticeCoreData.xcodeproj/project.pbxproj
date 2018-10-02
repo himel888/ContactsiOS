@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCA174502163386200CEC536 /* ConatctTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA1744F2163386200CEC536 /* ConatctTableViewCell.swift */; };
+		BCA17452216339EA00CEC536 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA17451216339EA00CEC536 /* AddContactViewController.swift */; };
 		BCE1D551216316F6008C6214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE1D550216316F6008C6214 /* AppDelegate.swift */; };
 		BCE1D553216316F6008C6214 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE1D552216316F6008C6214 /* ViewController.swift */; };
 		BCE1D556216316F6008C6214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE1D554216316F6008C6214 /* Main.storyboard */; };
@@ -15,6 +17,7 @@
 		BCE1D55E216316F8008C6214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE1D55C216316F8008C6214 /* LaunchScreen.storyboard */; };
 		BCE1D569216316F8008C6214 /* PracticeCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE1D568216316F8008C6214 /* PracticeCoreDataTests.swift */; };
 		BCE1D574216316F8008C6214 /* PracticeCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE1D573216316F8008C6214 /* PracticeCoreDataUITests.swift */; };
+		BCE1D58221631863008C6214 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE1D58121631863008C6214 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BCA1744F2163386200CEC536 /* ConatctTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConatctTableViewCell.swift; sourceTree = "<group>"; };
+		BCA17451216339EA00CEC536 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 		BCE1D54D216316F6008C6214 /* PracticeCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE1D550216316F6008C6214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCE1D552216316F6008C6214 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		BCE1D56F216316F8008C6214 /* PracticeCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE1D573216316F8008C6214 /* PracticeCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCoreDataUITests.swift; sourceTree = "<group>"; };
 		BCE1D575216316F8008C6214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE1D58121631863008C6214 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				BCE1D55C216316F8008C6214 /* LaunchScreen.storyboard */,
 				BCE1D55F216316F8008C6214 /* Info.plist */,
 				BCE1D557216316F6008C6214 /* PracticeCoreData.xcdatamodeld */,
+				BCE1D58121631863008C6214 /* Contact.swift */,
+				BCA1744F2163386200CEC536 /* ConatctTableViewCell.swift */,
+				BCA17451216339EA00CEC536 /* AddContactViewController.swift */,
 			);
 			path = PracticeCoreData;
 			sourceTree = "<group>";
@@ -192,7 +201,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = slickdevs;
+				ORGANIZATIONNAME = kazi;
 				TargetAttributes = {
 					BCE1D54C216316F6008C6214 = {
 						CreatedOnToolsVersion = 10.0;
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE1D58221631863008C6214 /* Contact.swift in Sources */,
 				BCE1D553216316F6008C6214 /* ViewController.swift in Sources */,
 				BCE1D559216316F6008C6214 /* PracticeCoreData.xcdatamodeld in Sources */,
+				BCA17452216339EA00CEC536 /* AddContactViewController.swift in Sources */,
+				BCA174502163386200CEC536 /* ConatctTableViewCell.swift in Sources */,
 				BCE1D551216316F6008C6214 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +448,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PracticeCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,6 +457,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazi.PracticeCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,7 +467,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PracticeCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,6 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazi.PracticeCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
